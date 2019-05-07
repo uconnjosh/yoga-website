@@ -1,0 +1,22 @@
+.top-nav {
+  background-color: #0047ab;
+  color: white;
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1000px;
+  }
+  .link {
+    padding: 0 1em;
+    letter-spacing: 2px;
+  }
+  .link--home {
+    width: 52px;
+    > img {
+      width: 100%;
+    }
+  }
+}
