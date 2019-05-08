@@ -1,8 +1,9 @@
 body {
   font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
 
   @include breakpoint(xl) {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   @include breakpoint(lg) {
@@ -28,4 +29,54 @@ a {
   text-decoration: none;
   // todo: isn't this default?
   cursor: pointer;
+}
+
+.max-w-lg {
+  max-width: 1200px;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.bg-center-cover {
+  @include bg-center-cover;
+}
+
+.spacer-square {
+  padding-bottom: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-1 {
+  margin: 1em;
+}
+
+.relative {
+  position: relative;
+}
+
+.direction-row-reverse {
+  flex-direction: row-reverse;
 }

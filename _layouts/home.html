@@ -16,7 +16,9 @@
 </head>
 
 <body class="home-container">
+
   {% include top-nav.html %}
+
   <div class="hero">
     <div class="hero__text">
 
@@ -29,6 +31,69 @@
       </h5>
 
     </div>
+  </div>
+
+  <div class="max-w-lg mx-auto">
+
+    <div class="flex space-between align-center">
+
+      <div class="w-45 m-1">
+        <p>
+            You will find our beautiful pilates studio conveniently located 1 block from the ocean. We offer private and semi-private sessions, with daily Spin and Pilates Mat Classes, including classes in Reformer, Cadillac/Trapeze, Wunda Chair and Spine Corrector Equipment.
+
+            Our friendly fitness studio staff of experienced and certified instructors will assist you in achieving your personal health and fitness goals.
+            
+            Sunset Cliffs Pilates can help you transform your body into the best shape of your life! Pilates articulates the joints, it dictates coordination, and it is an isometric workout using the resistance of your body weight, employing several muscle groups simultaneously through the concept spring resistance. Hundred of movements can be performed on all the equipment, strengthening the core of the body as well as other desired areas.
+        </p>
+      </div>
+
+      <div class="w-45 m-1">
+        <div
+          style="background-image: url('/assets/images/home/point-loma-rd.png')"
+          class="bg-center-cover spacer-square"
+        ></div>
+      </div>
+      
+    </div>
+
+    {% include class.html
+      image="/assets/images/classes/mat.jpg"
+      title="PILATES MAT CLASS"
+      description="Designed to a build strong healthy core and peripheral muscles.
+      This intense workout will help you achieve a sculpted, lean and athletic body.
+      Mat Pilates is a balanced and full body workout. With a major focus on lengthening and strengenthing your muscles.
+      Whether you are a beginner, intermediate or even advanced with your workout this unique class can be modified for all levels of exercise." 
+    %}
+
+    {% include class.html
+      image="/assets/images/classes/reformer.jpg"
+      title="PILATES REFORMER"
+      class="direction-row-reverse"
+      description="Pilates Reformer workouts challenge stability and coordination. The goal here is to heighten flexibility and agility by strengenthing the core. Creating longer and leaner muscles which are more functional improving core strength, flexibility, and stamina. Many exercises that are performed on mat or floor Pilate’s workouts are brought to the reformer using spring resistance.
+      <br />
+      <br />
+      Again, this Pilates workout routine can be modified for someone with restrictions in movements to the athlete looking to improve on speed, strength, muscle function and also helping to reducing the risk of injury.
+      Private Sessions for Pilates are also available. Private Pilates Reformer Sessions offers you one on one instruction. Please contact the studio by phone or email to inquire for pricing and to book appointment.
+      " 
+    %}
+
+    {% include class.html
+      image="/assets/images/classes/spin.jpg"
+      title="SPINNING"
+      description="In addition to all forms of Pilates workout offered at Sunset Cliffs Pilates, we also have a unique staff in Spin instruction.
+      All Instructors are certified - offering a challenging but fun workout.
+      Did you know that you can burn up to 700 calories in one 1-hour spin class?
+      It’s true! Spin class is a great cardio workout. These low impact classes are designed individually by the instructor. Each Instructor and class is unique in their routine and level of class.
+      Spin compliments your Pilates workout adding that cardio boost that is needed to maintain a healthy body.      
+      " 
+    %}
+
+    {% include class.html
+      image="/assets/images/classes/training.jpg"
+      title="PERSONAL TRAINING"
+      class="direction-row-reverse"
+      description="Personal Training is offered in private or semi –private sessions. Sunset Cliffs Pilates is equipped with all equipment needed for a Challenging session to include weight lifting, kettle bell, and cardio work outs."
+    %}
   </div>
 </body>
 
