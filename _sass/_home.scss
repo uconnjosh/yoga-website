@@ -11,4 +11,20 @@
   .hero__text {
     color: white;
   }
+
+  .g-map {
+    padding-bottom: 33%;
+    margin-top: 2em;
+  }
+  
+  .location {
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 71, 171);
+    padding: 1em;
+    > a {
+      display: block;
+      font-size: 1.1rem;
+    }
+  }
 }
