@@ -28,8 +28,38 @@
     }
   }
   .ping-pong {
-    > .flex:nth-child(odd) {
+    .ping-pong__image {
+      overflow: hidden;
+      > div {
+        transition: transform .5s;
+      }
+    }
+    > .flex:nth-child(even) {
       flex-direction: row-reverse;
+      .ping-pong__image {
+        &:hover {
+          > div {
+            transform: scale(1);
+          }
+        } 
+        > div {
+          transform: scale(.95) translateX(-5%);    
+        }
+      }
+    }
+    > .flex:nth-child(odd) {
+      .ping-pong__image {
+        &:hover {
+          > div {
+            transform: scale(1);
+          }
+        }
+        > div {
+          transform: scale(.95) translateX(5%);
+        }
+      }
     }
   }
 }
+
+
