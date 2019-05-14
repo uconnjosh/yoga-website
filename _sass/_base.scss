@@ -87,3 +87,20 @@ a {
   padding-left: 2em;
   padding-right: 2em;
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.hover-grow {
+  overflow: hidden;
+  > div {
+    transform: scale(.95);
+    transition: transform .5s;
+  }
+  &:hover {
+    > div {
+      transform: scale(1);
+    }
+  }
+}

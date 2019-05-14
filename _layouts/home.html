@@ -22,8 +22,6 @@
 
 <body class="home-container">
 
-  {% include top-nav.html %}
-
   <div class="hero">
     <div class="hero__text">
 
@@ -52,7 +50,7 @@
         </p>
       </div>
 
-      <div class="w-45 m-1">
+      <div class="hover-grow w-45 m-1">
         <div
           style="background-image: url('/assets/images/home/point-loma-rd.png')"
           class="bg-center-cover spacer-square"
@@ -118,6 +116,9 @@
     </a>
 
   </div>
+
+  {% include top-nav.html %}
+
   <script>
     function initMap() {
       var coords = { lat: 32.735911, lng: -117.253422 }
