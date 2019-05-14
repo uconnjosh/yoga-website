@@ -13,6 +13,11 @@
   {% include header-links.html %}
 
   <meta name="theme-color" content="#fafafa">
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoH1QYZjuTIXqbF_X087CyVNDi3W3AhDE&callback=initMap"
+  ></script>
 </head>
 
 <body class="home-container">
@@ -95,6 +100,24 @@
       description="Personal Training is offered in private or semi –private sessions. Sunset Cliffs Pilates is equipped with all equipment needed for a Challenging session to include weight lifting, kettle bell, and cardio work outs."
     %}
   </div>
+  <div
+    id="g-map"
+    class="g-map"
+  ></div>
+  <script>
+    function initMap() {
+      var coords = { lat: 32.735911, lng: -117.253422 }
+      
+      map = new google.maps.Map(document.getElementById("g-map"), {
+        center: coords,
+        zoom: 14
+      });
+
+      var marker = new google.maps.Marker({position: coords, map: map});
+    }
+  </script>
 </body>
 
 </html>
+
+
