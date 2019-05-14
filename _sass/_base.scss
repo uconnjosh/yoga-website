@@ -1,3 +1,5 @@
+$site-gutter: 2em;
+
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
@@ -79,4 +81,9 @@ a {
 
 .direction-row-reverse {
   flex-direction: row-reverse;
+}
+
+.px-site-gutter {
+  padding-left: 2em;
+  padding-right: 2em;
 }
