@@ -27,4 +27,9 @@
       font-size: 1.1rem;
     }
   }
+  .ping-pong {
+    > .flex:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
 }
