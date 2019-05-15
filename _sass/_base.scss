@@ -1,4 +1,5 @@
 $site-gutter: 2em;
+$primary-color: rgb(0, 71, 171);
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -37,17 +38,25 @@ a {
   max-width: 1200px;
 }
 
+.max-w-md {
+  max-width: 800px;
+}
+
 .w-45 {
   width: 45%;
 }
 
 .w-50 {
-  width: 50%;
+  width: 49%;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .space-between {
@@ -56,6 +65,10 @@ a {
 
 .align-center {
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .bg-center-cover {
@@ -88,7 +101,33 @@ a {
   padding-right: 2em;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
+
+.bg-primary-color {
+  background-color: $primary-color;
+}
+
+.color-white {
+  color: white;
+}
+
+.section-header {
+  text-align: center;
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem 0;
+}
+
+.border-right {
+  border-style: dotted;
+  border-width: 0 thin 0 0;
+}
+
+
 

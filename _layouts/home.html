@@ -40,7 +40,7 @@
 
     <div class="flex space-between align-center">
 
-      <div class="w-45 m-1">
+      <div class="w-45">
           <p>
               You will find our beautiful pilates studio conveniently located 1 block from the ocean. We offer private and semi-private sessions, with daily Spin and Pilates Mat Classes, including classes in Reformer, Cadillac/Trapeze, Wunda Chair and Spine Corrector Equipment.
   
@@ -51,7 +51,7 @@
         </div>
     
 
-      <div class="ping-pong__image w-45 m-1">
+      <div class="ping-pong__image w-45">
         <div
           style="background-image: url('/assets/images/home/point-loma-rd.png')"
           class="bg-center-cover spacer-square"
@@ -59,6 +59,11 @@
       </div>
 
     </div>
+  </div>
+
+  <h1 class="section-header">CLASSES</h1>
+
+  <div class="max-w-lg mx-auto px-site-gutter ping-pong">
 
     {% include class.html
       image="/assets/images/classes/mat.jpg"
@@ -98,11 +103,7 @@
     %}
   </div>
 
-  <div
-    id="g-map"
-    class="g-map"
-  ></div>
-  <div class="location">
+  <div class="location section-header">
 
     <h2>Check Us Out!</h2>
 
@@ -110,12 +111,43 @@
       4720 Point Loma Ave
       San Diego, CA 92107
     </a>
-  
+
     <a href="tel:619-224-3309">
       (619) 224-3309
     </a>
+  
+  </div>
+
+  <div
+    id="g-map"
+    class="g-map"
+  ></div>
+
+  <h1 class="section-header margin-0">NUTRITION</h1>
+
+  <div class="text-center max-w-md mx-auto px-site-gutter">
+    <img
+      src="/assets/images/shop/jay-robb.jpg"
+      class="shop-image"
+    />
+
+    <div>
+      <p class="shop-product-description">
+        Sunset Cliffs Pilates is proud to offer Jay Robb Products. Jay Robb is a local company offering several products- Protein Drinks, bars. Etc. Please contact studio product information and orders.
+      </p>
+
+      <div
+        style="background-image: url('assets/images/shop/protein.png')";
+        class="inline-block w-45 bg-center-cover shop-product-image"
+      >
+        <div></div>
+      </div>
+
+    </div>
 
   </div>
+
+  
 
   {% include top-nav.html %}
 
