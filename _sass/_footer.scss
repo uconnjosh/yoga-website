@@ -1,0 +1,37 @@
+.footer {
+  position: relative;
+  text-align: center;
+  background-color: $primary-color;
+  padding: 1rem;
+  color: white;
+  .social-icon {
+    width: 45px;
+    margin: .5rem;
+  }
+  
+  .newsletter-signup {
+    margin: 1rem 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: .25rem;
+    border-color: black;
+    min-width: 200px;
+    border-width: 0 0 4px 0;
+    text-indent: 6px;
+    &::placeholder {
+      color: white;
+      font-size: 1rem;
+    }
+  }
+  .scrolltop {
+    position: absolute;
+    cursor: pointer;
+    top: 22px;
+    right: 22px;
+    > img {
+      width: 32px;
+    }
+  }
+}
