@@ -11,4 +11,68 @@
   .hero__text {
     color: white;
   }
+
+  .g-map {
+    padding-bottom: 33%;
+  }
+  
+  .location {
+    > a {
+      display: block;
+      font-size: 1.1rem;
+    }
+  }
+  .ping-pong {
+    .ping-pong__image {
+      overflow: hidden;
+      > div {
+        transition: transform .5s;
+      }
+    }
+    > .flex:nth-child(even) {
+      flex-direction: row-reverse;
+      .ping-pong__image {
+        &:hover {
+          > div {
+            transform: scale(1);
+          }
+        } 
+        > div {
+          transform: scale(.95) translateX(-5%);    
+        }
+      }
+    }
+    > .flex:nth-child(odd) {
+      .ping-pong__image {
+        &:hover {
+          > div {
+            transform: scale(1);
+          }
+        }
+        > div {
+          transform: scale(.95) translateX(5%);
+        }
+      }
+    }
+  }
+  .shop-image {
+    margin: 1rem 0;
+    width: 33%;
+    max-width: 358px;
+    min-width: 200px;
+  }
+  .shop-product-image {
+    > div {
+      padding-bottom: 100%;
+    }
+  }
+  .shop-product-description {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    vertical-align: top;
+    padding-top: 3rem;
+  }
 }
+
+

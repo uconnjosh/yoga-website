@@ -13,15 +13,20 @@
   {% include header-links.html %}
 
   <meta name="theme-color" content="#fafafa">
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoH1QYZjuTIXqbF_X087CyVNDi3W3AhDE&callback=initMap"
+  ></script>
 </head>
 
 <body class="home-container">
-  {% include top-nav.html %}
+
   <div class="hero">
     <div class="hero__text">
 
       <h1>
-        Sunset Cliffs Pilates
+        SUNSET CLIFFS PILATES
       </h1>
 
       <h5>
@@ -30,6 +35,153 @@
 
     </div>
   </div>
+
+  <div class="max-w-lg mx-auto px-site-gutter ping-pong">
+
+    <div class="flex justify-between align-center">
+
+      <div class="w-45">
+          <p>
+              You will find our beautiful pilates studio conveniently located 1 block from the ocean. We offer private and semi-private sessions, with daily Spin and Pilates Mat Classes, including classes in Reformer, Cadillac/Trapeze, Wunda Chair and Spine Corrector Equipment.
+  
+              Our friendly fitness studio staff of experienced and certified instructors will assist you in achieving your personal health and fitness goals.
+              
+              Sunset Cliffs Pilates can help you transform your body into the best shape of your life! Pilates articulates the joints, it dictates coordination, and it is an isometric workout using the resistance of your body weight, employing several muscle groups simultaneously through the concept spring resistance. Hundred of movements can be performed on all the equipment, strengthening the core of the body as well as other desired areas.
+          </p>
+        </div>
+    
+
+      <div class="ping-pong__image w-45">
+        <div
+          style="background-image: url('/assets/images/home/point-loma-rd.png')"
+          class="bg-center-cover spacer-square"
+        ></div>
+      </div>
+
+    </div>
+  </div>
+
+  <h1 class="section-header">CLASSES</h1>
+
+  <div class="max-w-lg mx-auto px-site-gutter ping-pong">
+
+    {% include class.html
+      image="/assets/images/classes/mat.jpg"
+      title="PILATES MAT CLASS"
+      description="Designed to a build strong healthy core and peripheral muscles.
+      This intense workout will help you achieve a sculpted, lean and athletic body.
+      Mat Pilates is a balanced and full body workout. With a major focus on lengthening and strengenthing your muscles.
+      Whether you are a beginner, intermediate or even advanced with your workout this unique class can be modified for all levels of exercise." 
+    %}
+
+    {% include class.html
+      image="/assets/images/classes/reformer.jpg"
+      title="PILATES REFORMER"
+      description="Pilates Reformer workouts challenge stability and coordination. The goal here is to heighten flexibility and agility by strengenthing the core. Creating longer and leaner muscles which are more functional improving core strength, flexibility, and stamina. Many exercises that are performed on mat or floor Pilate’s workouts are brought to the reformer using spring resistance.
+      <br />
+      <br />
+      Again, this Pilates workout routine can be modified for someone with restrictions in movements to the athlete looking to improve on speed, strength, muscle function and also helping to reducing the risk of injury.
+      Private Sessions for Pilates are also available. Private Pilates Reformer Sessions offers you one on one instruction. Please contact the studio by phone or email to inquire for pricing and to book appointment.
+      " 
+    %}
+
+    {% include class.html
+      image="/assets/images/classes/spin.jpg"
+      title="SPINNING"
+      description="In addition to all forms of Pilates workout offered at Sunset Cliffs Pilates, we also have a unique staff in Spin instruction.
+      All Instructors are certified - offering a challenging but fun workout.
+      Did you know that you can burn up to 700 calories in one 1-hour spin class?
+      It’s true! Spin class is a great cardio workout. These low impact classes are designed individually by the instructor. Each Instructor and class is unique in their routine and level of class.
+      Spin compliments your Pilates workout adding that cardio boost that is needed to maintain a healthy body.      
+      " 
+    %}
+
+    {% include class.html
+      image="/assets/images/classes/training.jpg"
+      title="PERSONAL TRAINING"
+      description="Personal Training is offered in private or semi –private sessions. Sunset Cliffs Pilates is equipped with all equipment needed for a Challenging session to include weight lifting, kettle bell, and cardio work outs."
+    %}
+  </div>
+
+  <div class="location section-header">
+
+    <h1>STOP BY!</h1>
+
+    <a href="#">
+      4720 Point Loma Ave
+      San Diego, CA 92107
+    </a>
+
+    <a href="tel:619-224-3309">
+      (619) 224-3309
+    </a>
+  
+  </div>
+
+  <div
+    id="g-map"
+    class="g-map"
+  ></div>
+
+  <h1 class="section-header m-0">NUTRITION</h1>
+
+  <div class="text-center max-w-md mx-auto px-site-gutter">
+    <a
+      href="https://www.jayrobb.com/"
+      target="_blank"
+    >
+      <img
+        src="/assets/images/shop/jay-robb.jpg"
+        class="shop-image"
+      />
+    </a>
+
+    <div>
+      <p class="shop-product-description">
+        Sunset Cliffs Pilates is proud to offer Jay Robb Products. Jay Robb is a local company offering several protein products. Please contact the studio for product information and orders.
+      </p>
+
+      <a
+        href="https://www.jayrobb.com/products/"
+        target="_blank"
+        style="background-image: url('assets/images/shop/protein.png')";
+        class="inline-block w-45 bg-center-cover shop-product-image"
+      >
+        <div></div>
+      </a>
+
+    </div>
+
+  </div>
+
+  {% include footer.html %}
+
+  {% include top-nav.html %}
+
+  <script>
+    function initMap() {
+      var coords = { lat: 32.735911, lng: -117.253422 }
+      
+      map = new google.maps.Map(document.getElementById("g-map"), {
+        center: coords,
+        zoom: 13
+      });
+
+      var marker = new google.maps.Marker({position: coords, map: map});
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      var scrollTop = document.getElementById('footer-scrolltop')
+      scrollTop.addEventListener('click', function() {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth',
+        })
+      })
+    });
+  </script>
 </body>
 
 </html>
+
+

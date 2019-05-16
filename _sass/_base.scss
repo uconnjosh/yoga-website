@@ -1,8 +1,12 @@
+$site-gutter: 2em;
+$primary-color: rgb(0, 71, 171);
+
 body {
   font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
 
   @include breakpoint(xl) {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   @include breakpoint(lg) {
@@ -29,3 +33,125 @@ a {
   // todo: isn't this default?
   cursor: pointer;
 }
+
+.max-w-lg {
+  max-width: 1200px;
+}
+
+.max-w-md {
+  max-width: 800px;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-50 {
+  width: 49%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.bg-center-cover {
+  @include bg-center-cover;
+}
+
+.spacer-square {
+  padding-bottom: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
+}
+
+.m-50 {
+ margin: .5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.px-site-gutter {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-primary-color {
+  background-color: $primary-color;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-black {
+  color: black;
+}
+
+.section-header {
+  text-align: center;
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem 0;
+}
+
+.border-right {
+  border-style: dotted;
+  border-width: 0 thin 0 0;
+}
+
+
+
